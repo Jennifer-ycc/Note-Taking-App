@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes Taking App</title>
+  
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+  <!-- Top navigation bar -->
+  <nav>
+    <div class="logo">Notes Taking</div>
+    <ul>
+      <li><a href="#">My Notes</a></li>
+      <li><a href="#">Notebooks</a></li> 
+      <li><a href="#">Settings</a></li>
+    </ul>
+
+    <div class="d-flex" role="search">
+        <!--<a href="/login"><button class="btn btn-outline-success mx-2" type="submit">Login</button></a> -->
+        <a href="/signup"><button class="btn btn-outline-success mx-2" type="submit">Login / Signup</button></a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Sidebar for navigation -->
+    <aside>
+      <ul>
+        <li>All Notes</li>
+        <li>Notebooks
+          <ul>
+            <li>Work</li>
+            <li>Personal</li>
+          </ul>
+        </li>
+        <li>Tags
+          <ul>
+            <li>Todo</li>
+            <li>Reminders</li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    
+    <!-- List of notes -->
+    <section class="notes">
+      <h2>All Notes</h2>
+      
+      <div class="note">
+        <h3>Grocery list</h3>
+        <p>Last edited Yesterday</p>  
+      </div>
+      
+      <div class="note">
+        <h3>Holidays note</h3>
+        <p>Last edited December 25, 2025</p>
+      </div>
+
+      
+
+      <input id="note-title" placeholder="Enter note title">
+<textarea id="note-content" placeholder="Enter note content"></textarea> 
+<button id="add-note">Add Note</button>
+
+      
+    </section>
+    
+  </main>
+  
+  <!-- Encryption password modal -->
+  <div class="modal">
+    <h2>Enter Password</h2>
+    <input type="password">
+    <button>OK</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
